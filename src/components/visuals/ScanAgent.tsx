@@ -113,7 +113,9 @@ export default function ScanAgent() {
 
     tl.add({}, { duration: 900 }); // hold, then loop
 
-    return () => tl.pause();
+    return () => {
+      tl.pause();
+    };
   }, [inView]);
 
   let openSeen = 0;

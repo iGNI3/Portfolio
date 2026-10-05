@@ -53,7 +53,9 @@ export default function CodeScan() {
     // reset for next sweep
     tl.add(flags, { opacity: 0, duration: 1 }, 0);
 
-    return () => tl.pause();
+    return () => {
+      tl.pause();
+    };
   }, [inView]);
 
   const H = ROWS * RH;
