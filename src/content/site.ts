@@ -394,14 +394,14 @@ export const offTheClock = {
   },
 
   photography: {
-    blurb: "Mostly roads, light and people. Drag the prints around.",
+    blurb: "Festival light, old stone and quiet ridges. Drag the prints around.",
     gear: "[Camera / phone]",
     photos: [
-      { src: "/photos/01.jpg", caption: "[Place, year]" },
-      { src: "/photos/02.jpg", caption: "[Place, year]" },
-      { src: "/photos/03.jpg", caption: "[Place, year]" },
-      { src: "/photos/04.jpg", caption: "[Place, year]" },
-      { src: "/photos/05.jpg", caption: "[Place, year]" },
+      { src: "/photos/01.jpg", caption: "Durga Puja · the pandal" },
+      { src: "/photos/02.jpg", caption: "Durga Puja · up close" },
+      { src: "/photos/03.jpg", caption: "Old tomb, new birds" },
+      { src: "/photos/04.jpg", caption: "Evening aarti" },
+      { src: "/photos/05.jpg", caption: "Pine ridge · a quiet hour" },
     ],
   },
 };

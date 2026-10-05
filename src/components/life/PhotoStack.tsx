@@ -29,7 +29,7 @@ function Print({ p, i }: { p: Photo; i: number }) {
       className="absolute w-[min(30%,200px)] touch-none select-none bg-[#f2f0ea] p-2.5 pb-9 shadow-[0_18px_40px_rgba(0,0,0,0.55)]"
       style={{ left: `${pos.x}%`, top: `${pos.y}%`, rotate: `${pos.r}deg`, opacity: 0 }}
     >
-      <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#1a1a18]">
+      <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#1a1a18]">
         {!missing ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
