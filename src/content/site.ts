@@ -28,10 +28,10 @@ export const site = {
   ],
 
   intro:
-    "AI/ML engineer with 2+ years shipping production generative and agentic AI — security agents, multi-agent coding systems, and retrieval that respects who is allowed to see what.",
+    "AI/ML engineer with 2+ years shipping production generative and agentic AI security agents, multi-agent coding systems, and retrieval that respects who is allowed to see what.",
 
   about:
-    "I started in the lab, not the terminal. A BSc in Biotechnology and an MSc in Bioinformatics taught me to treat messy data with suspicion and to test every claim. At Amity University that became deep-learning research and a Springer Best Research Paper award. Now at TurtleNeck Systems I build LLM systems for security — malware detection, vulnerability scanning and an autonomous testing agent — that help defenders find problems before anyone else does.",
+    "I started in the lab, not the terminal. A BSc in Biotechnology and an MSc in Bioinformatics taught me to treat messy data with suspicion and to test every claim. At Amity University that became deep-learning research and a Springer Best Research Paper award. I build LLM systems for security malware detection, vulnerability scanning and an autonomous testing agent that help defenders find problems before anyone else does.",
 
   email: "ankitkumardas701@gmail.com",
 
@@ -60,13 +60,13 @@ export type Project = {
   live?: { label: string; href: string };
   note?: string;
   visual:
-    | { kind: "grid" }
-    | { kind: "scan" }
-    | { kind: "swarm" }
-    | { kind: "codescan" }
-    | { kind: "pipeline"; label: string; steps: { label: string; sub: string }[] }
-    | { kind: "stat"; value: number; prefix?: string; suffix?: string; caption: string }
-    | { kind: "code" };
+  | { kind: "grid" }
+  | { kind: "scan" }
+  | { kind: "swarm" }
+  | { kind: "codescan" }
+  | { kind: "pipeline"; label: string; steps: { label: string; sub: string }[] }
+  | { kind: "stat"; value: number; prefix?: string; suffix?: string; caption: string }
+  | { kind: "code" };
   hidden?: boolean;
 };
 
@@ -363,28 +363,28 @@ export const capabilities: { group: string; items: string[] }[] = [
  * (e.g. "/photos/ladakh.jpg"). Missing files show an empty frame.
  */
 export const offTheClock = {
-  intro: "Away from the keyboard I'm usually under a barbell or on the road — on two wheels, with a camera, somewhere new.",
+  intro: "Away from the keyboard I'm usually under a barbell or on the road on two wheels, with a camera, somewhere new.",
 
   travel: {
     blurb: "I travel to reset. New places are the best debugging tool I know.",
     places: [
-      { name: "Kolkata", note: "Home" },
+      { name: "Berhampore", note: "Home" },
+      { name: "Kolkata", note: "Roots" },
       { name: "Noida", note: "Base" },
-      { name: "[Place]", note: "[Year]" },
-      { name: "[Place]", note: "[Year]" },
-      { name: "[Place]", note: "[Year]" },
-      { name: "[Place]", note: "[Year]" },
+      { name: "Yet to find", note: "Who Knows" },
+      { name: "Still Locked", note: "Will see" },
+      { name: "wondering", note: "Hoping" },
     ],
   },
 
   riding: {
     blurb: "Long rides, early starts, no notifications.",
-    bike: "[Your bike]",
+    bike: "Royal Enfield Hunter 350",
     totalKm: null as number | null, // e.g. 12000 — counts up when set
     rides: [
-      { route: "[Start → Destination]", distance: "[000 km]" },
-      { route: "[Start → Destination]", distance: "[000 km]" },
-      { route: "[Start → Destination]", distance: "[000 km]" },
+      { route: "[Start → Berhampoer]", distance: "[20 km]" },
+      { route: "[Berhampoer → Kolkata]", distance: "[200 km]" },
+      { route: "[Kolkata → Noida]", distance: "[1820 km]" },
     ],
   },
 
