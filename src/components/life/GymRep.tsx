@@ -145,7 +145,7 @@ export default function GymRep() {
       // grid ripple from the centre, like the anime.js homepage
       animate(q("[data-dot]"), { scale: [1, 2.4, 1], opacity: [0.18, 0.9, 0.18], duration: 900, delay: stagger(45, { grid: [COLS, ROWS], from: "center" }), ease: "outQuad" });
       // rep number pops with an elastic spring
-      animate(reps, { scale: [1.25, 1], translateY: [-8, 0], duration: 900, ease: "outElastic(1, .45)" });
+      if (reps) animate(reps, { scale: [1.25, 1], translateY: [-8, 0], duration: 900, ease: "outElastic(1, .45)" });
       // plates wobble, muscles "flex"
       animate(q("[data-plate]"), { scaleY: [1.12, 1], duration: 700, ease: "outElastic(1, .35)", delay: stagger(40) });
       animate(q("[data-def]"), { stroke: ["#ff5a1f", "#3a3833"], duration: 800, delay: stagger(30), ease: "outQuad" });

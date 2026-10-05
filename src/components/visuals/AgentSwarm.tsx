@@ -33,6 +33,7 @@ export default function AgentSwarm() {
     const bars = el.querySelectorAll<SVGRectElement>("[data-work]");
     const packets = el.querySelectorAll<SVGCircleElement>("[data-packet]");
     const core = el.querySelector("[data-core]");
+    if (!core) return;
 
     const corePulse = animate(core, { scale: [1, 1.12, 1], duration: 1600, loop: true, ease: "inOutSine", });
 

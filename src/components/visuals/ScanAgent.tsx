@@ -89,6 +89,7 @@ export default function ScanAgent() {
 
     // 3 — CRAFT PAYLOAD: pieces assemble into a packet by the agent
     tl.add({}, { duration: 1, onBegin: () => setPhase(2) }, 3100);
+    // @ts-expect-error anime.js types reject per-target keyframe arrays, which it supports at runtime
     tl.add("[data-piece]", { opacity: [0, 1], scale: [0.3, 1], translateX: (_: unknown, i: number) => [[-14, 12, -10, 14][i] ?? 0, 0], translateY: (_: unknown, i: number) => [[-12, -14, 12, 10][i] ?? 0, 0], duration: 500, delay: stagger(90), ease: "outBack(2)" }, 3100);
     tl.add("[data-packet-label]", { opacity: [0, 1], duration: 300 }, 3500);
 
